@@ -1,0 +1,28 @@
+<form ng-submit="vm.submit()">
+
+    <md-input-container>
+        <label>Titre</label>
+        <input type="text" ng-model="vm.titre">
+    </md-input-container>
+    </br>
+    <md-input-container>
+        <label>Description</label>
+        <input type="text" ng-model="vm.description">
+    </md-input-container>
+    </br>
+    <md-input-container>
+        <label>Lieu</label>
+        <input type="text" ng-model="vm.lieu">
+    </md-input-container>
+    </br>
+    <md-input-container>
+        <label>Photo</label>
+        <input type='file' ng-model='vm.photo' base-sixty-four-input>
+    </md-input-container>
+
+
+
+    </br>
+    <md-button type="submit" class="md-primary md-raised">Créer un élément</md-button>
+
+</form>

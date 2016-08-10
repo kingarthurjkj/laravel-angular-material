@@ -1,0 +1,43 @@
+<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+    <h1 >Question</h1>
+</section>
+
+<div layout="row" layout-wrap>
+    <div flex="20" ng-repeat="question in vm.questions.questions">
+        <md-card>
+            <md-card-content>
+                <h2>{{question.name}}</h2>
+                <p>{{question.problem}}</p>
+                <p>{{question.options}}</p>
+            </md-card-content>
+            <md-card-footer>
+                <md-button class="md-primary md-raised" ng-click="vm.delete(question.id)">Delete</md-button>
+            </md-card-footer>
+        </md-card>
+    </div>
+</div>
+<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+    <h1 >Add question</h1>
+</section>
+<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+    <form ng-submit="vm.submit()">
+
+        <md-input-container>
+            <label>Activity Name</label>
+            <input type="text" ng-model="vm.activity">
+        </md-input-container>
+
+        <md-input-container>
+            <label>Problem</label>
+            <input type="text" ng-model="vm.problem">
+        </md-input-container>
+
+        <md-input-container>
+            <label>Options</label>
+            <input type="text" ng-model="vm.option">
+        </md-input-container>
+
+        <md-button type="submit" class="md-primary md-raised">Create question</md-button>
+
+    </form>
+</section>

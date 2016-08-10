@@ -1,0 +1,47 @@
+<div style="margin-top: 50px;"></div>
+<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+    <h1 >Answer The Question</h1>
+    <div style="margin-top: 50px;"></div>
+
+</section>
+<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+    <!--<div flex="20" ng-repeat="question in vm.questions.questions">-->
+
+    <h2>{{vm.questions}}</h2>
+    <!--</div>-->
+</section>
+<form ng-submit="vm.submit()">
+    <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+        <div flex="10" layout="" layout-align="center center">
+            <span class="md-body-1">bad</span>
+        </div>
+        <md-slider flex="" md-discrete="" ng-model="vm.answer" step="1" min="0" max="100" aria-label="rating">
+        </md-slider>
+        <div flex="10" layout="" layout-align="center center">
+            <span class="md-body-1">good</span>
+        </div>
+
+    </section>
+    <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+
+        <div style="margin-top: 50px;"></div>
+        <h1 >Option</h1>
+        <md-input-container>
+            <label>Giver</label>
+            <input type="text" ng-model="vm.giver">
+        </md-input-container>
+        <md-input-container>
+            <label>Taker</label>
+            <input type="text" ng-model="vm.taker">
+        </md-input-container>
+        <md-input-container>
+            <label>Day (you only select from 1 to 9)</label>
+            <input type="text" ng-model="vm.day">
+        </md-input-container>
+    </section>
+    <div style="margin-top: 50px;"></div>
+    <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+        <md-button type="submit" class="md-primary md-raised">save</md-button>
+    </section>
+
+</form>

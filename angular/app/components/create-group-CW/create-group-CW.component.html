@@ -1,0 +1,37 @@
+<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+    <h1 >Groups</h1>
+</section>
+
+<div layout="row" layout-wrap>
+    <div flex="20" ng-repeat="group in vm.groups.groups">
+        <md-card>
+            <md-card-content>
+                <h2>{{group.name}}</h2>
+                <p>{{group.option}}</p>
+            </md-card-content>
+            <md-card-footer>
+                <md-button class="md-primary md-raised" ng-click="vm.delete(group.id)">Delete</md-button>
+            </md-card-footer>
+        </md-card>
+    </div>
+</div>
+<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+    <h1 >Add Group</h1>
+</section>
+<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+    <form ng-submit="vm.submit()">
+
+        <md-input-container>
+            <label>Name</label>
+            <input type="text" ng-model="vm.name">
+        </md-input-container>
+
+        <md-input-container>
+            <label>Option</label>
+            <input type="text" ng-model="vm.option">
+        </md-input-container>
+
+        <md-button type="submit" class="md-primary md-raised">Create Group</md-button>
+
+    </form>
+</section>

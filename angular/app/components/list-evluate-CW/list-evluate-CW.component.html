@@ -1,0 +1,50 @@
+<md-content>
+    <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+        <div layout="row" layout-wrap>
+            <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+                <div flex="33" ng-repeat="evaluate in vm.evaluates.evaluates">
+
+                    <md-card>
+
+                        <md-card-content>
+                            <label>group_id :</label>
+                            <h4>{{evaluate.group_id}}</h4>
+
+                            <label>give_user_id :</label>
+                            <h4>{{evaluate.give_user_id}}</h4>
+
+                            <label>take_user_id :</label>
+                            <h4>{{evaluate.take_user_id}}</h4>
+
+                            <label>day :</label>
+                            <h4>{{evaluate.day}}</h4>
+
+                            <label>activity_id :</label>
+                            <h4>{{evaluate.activity_id}}</h4>
+
+                            <label>question_id :</label>
+                            <h4>{{evaluate.question_id}}</h4>
+
+                            <label>measure :</label>
+                            <h4>{{evaluate.measure}}</h4>
+
+                            <label>answer :</label>
+                            <h4>{{evaluate.answer}}</h4>
+
+                            <label>created_at :</label>
+                            <h4>{{evaluate.created_at}}</h4>
+
+                            <label>updated_at :</label>
+                            <h4>{{evaluate.updated_at}}</h4>
+
+
+                        </md-card-content>
+
+                    </md-card>
+
+                </div>
+            </section>
+
+        </div>
+    </section>
+</md-content>
