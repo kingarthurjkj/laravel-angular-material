@@ -13,7 +13,7 @@
 
 ## Installation
 
-1 - ```git clone https://github.com/qjacquet/laravel-angular``` </br>
+1 - ```git clone https://github.com/kingarthurjkj/laravel-angular-material``` </br>
 2 - ```composer install``` </br>
 3 - [Follow the official doc] (https://laravel-angular.readme.io/docs)
 
